@@ -1,0 +1,40 @@
+<html>
+	<head>
+	<title>User Sign up</title>
+	</head>
+	<body>
+		<form method="post">
+		<table>
+			<tr>
+				<td>Username</td>
+				<td>
+					<input type="text" name="username" value="{{username}}">
+				</td>
+				<td>{{ error_username }}</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>
+					<input type="password" name="password" value="">
+				</td>
+				<td>{{ error_password }}</td>
+			</tr>
+			<tr>
+				<td>Verify</td>
+				<td>
+					<input type="password" name="verify" value="">
+				</td>
+				<td>{{ error_verify }}</td>
+			</tr>
+			<tr>
+				<td>Email (Optional)</td>
+				<td>
+					<input type="text" name="email" value="{{email}}">
+				</td>
+				<td>{{ error_email }}</td>
+			</tr>
+			<tr><td><input type="submit"></td></tr>
+		</table>
+		</form>
+	</body>
+</html>
